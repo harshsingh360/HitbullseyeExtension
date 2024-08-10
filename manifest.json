@@ -1,0 +1,33 @@
+{
+    "name": "HitExtension",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "description": "Simplifies the process of completing Hitbullsye tests automatically. Created by Harsh.",
+    "permissions":[
+        "activeTab",
+        "scripting",
+        "storage"
+    ],
+    "background":{
+        "service_worker": "./background.js"
+    },
+    "action":{
+        "default_popup":"./popup.html",
+        "default_icon": {
+            "16": "./images/logolpu.png",
+            "48": "./images/logolpu.png",
+            "128": "./images/logolpu.png"
+        }
+    },
+    "icons":{
+        "16": "./images/logolpu.png",
+            "48": "./images/logolpu.png",
+            "128": "./images/logolpu.png"
+    },
+    "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+    ]
+}

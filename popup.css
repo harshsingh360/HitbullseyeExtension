@@ -1,0 +1,101 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+}
+
+.container {
+    width: 300px;
+    height: 280px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.header {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.steps {
+    margin-top: 20px;
+    width: 100%;
+    margin-bottom: 13px;
+}
+
+.step {
+    font-size: 9px;
+    color: #666;
+    background: #e0e0e0;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.buttons {
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding:10px 20px;
+}
+
+.btn {
+    width: 45%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.left {
+    background: #007bff;
+}
+
+.left:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+.right {
+    background: #28a745;
+}
+
+.right:hover {
+    background: #218838;
+    transform: scale(1.05);
+}
+
+.developer-info {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 0.8em;
+    color: #555;
+}
+
+.status {
+    padding: 20px;
+    font-size: 14px;
+    color: #666;
+}
